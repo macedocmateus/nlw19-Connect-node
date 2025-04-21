@@ -5,3 +5,7 @@ Content-Type: application/json
     "name":"Mateus Macedo",
     "email":"mateus@email.com"
 }
+
+###
+
+GET http://localhost:3333/invites/c07301b6-e0f5-491b-9faf-708cd3e7b4a8

@@ -10,6 +10,7 @@ import { fastifySwagger } from "@fastify/swagger";
 import { fastifySwaggerUi } from "@fastify/swagger-ui";
 import { subscribeToEventRoute } from "./routes/subscribe-to-event-route";
 import { env } from "./env";
+import { accessInviteLinkRoute } from "./routes/access-invite-link";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -34,6 +35,7 @@ app.register(fastifySwaggerUi, {
 });
 
 app.register(subscribeToEventRoute);
+app.register(accessInviteLinkRoute);
 
 app.register(fastifyCors, {
     // Somente as URLs desse frontend poderá acessar este backend em especifico
