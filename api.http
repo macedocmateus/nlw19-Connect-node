@@ -2,10 +2,27 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name":"Mateus Macedo",
-    "email":"mateus@email.com"
+    "name":"Samira Oliveira",
+    "email":"samira@email.com",
+    "referrer":"8d8d27d4-c2b7-40b5-a7a0-0a42a77c6354"
 }
 
 ###
 
-GET http://localhost:3333/invites/c07301b6-e0f5-491b-9faf-708cd3e7b4a8
+GET http://localhost:3333/invites/0124593a-5d1e-4fc8-b529-70e0d582e792
+
+###
+
+GET http://localhost:3333/subscribers/0124593a-5d1e-4fc8-b529-70e0d582e792/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/0124593a-5d1e-4fc8-b529-70e0d582e792/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/0124593a-5d1e-4fc8-b529-70e0d582e792/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
